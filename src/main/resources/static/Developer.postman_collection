@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Developer",
+		"_postman_id": "f2a05da0-ac04-66ce-6566-1fef520b6441",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Developer - Add",
+			"request": {
+				"url": "http://localhost:8090/developer/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Chuck\",\n\t\"surname\" : \"Norris\"\n}"
+				},
+				"description": "Developer - Add"
+			},
+			"response": []
+		},
+		{
+			"name": "Developer - Update With Id",
+			"request": {
+				"url": "http://localhost:8090/developer/update/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Cristiano\",\n\t\"surname\" : \"Ronaldo\"\n}"
+				},
+				"description": "Developer - Update With Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Developer - Delete With Id",
+			"request": {
+				"url": "http://localhost:8090/developer/delete/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Developer - Delete With Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Developer - List All Developer",
+			"request": {
+				"url": "http://localhost:8090/developer/list",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Developer - List All Developer"
+			},
+			"response": []
+		},
+		{
+			"name": "Developer - List By Id",
+			"request": {
+				"url": "http://localhost:8090/developer/list/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Developer - List By Id"
+			},
+			"response": []
+		}
+	]
+}
